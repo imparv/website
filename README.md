@@ -261,6 +261,6 @@ This project is open source and available for personal and commercial use.
 
 ---
 
-**Made with ❤️ - Ready to customize and deploy!**
+**Made with ❤️ - Parv Rathee**
 
 For questions or support, feel free to reach out or create an issue.
