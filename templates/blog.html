@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+{% block content %}
+    <!-- Main Content -->
+    <main>
+        <section class="section section-light page-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Blog & Articles</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">Thoughts on web development and technology</p>
+                </div>
+
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1760548425425-e42e77fa38f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXZlbG9wbWVudHxlbnwxfHx8fDE3NzQxMTY4MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Blog post">
+                            <span class="blog-category">Web Development</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> March 15, 2026</span>
+                                <span><i class="far fa-clock"></i> 5 min read</span>
+                            </div>
+                            <h3 class="blog-title">Building Scalable React Applications</h3>
+                            <p class="blog-excerpt">
+                                Learn the best practices for building large-scale React applications that are maintainable,
+                                performant, and easy to scale.
+                            </p>
+                            <a href="{{url_for('post')}}" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1771189255245-225dcea3f652?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGRlc2lnbiUyMHByb2plY3R8ZW58MXx8fHwxNzc0MTA0OTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Blog post">
+                            <span class="blog-category">Design</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> March 10, 2026</span>
+                                <span><i class="far fa-clock"></i> 7 min read</span>
+                            </div>
+                            <h3 class="blog-title">The Art of UI/UX Design</h3>
+                            <p class="blog-excerpt">
+                                Discover the principles of good design and how to create user interfaces that are both
+                                beautiful and functional.
+                            </p>
+                            <a href="{{url_for('post')}}" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1666723043169-22e29545675c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b3Jrc3BhY2UlMjBkZXNrfGVufDF8fHx8MTc3NDA4NzM0Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Blog post">
+                            <span class="blog-category">Backend</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> March 5, 2026</span>
+                                <span><i class="far fa-clock"></i> 6 min read</span>
+                            </div>
+                            <h3 class="blog-title">RESTful API Best Practices</h3>
+                            <p class="blog-excerpt">
+                                A comprehensive guide to designing and implementing RESTful APIs that are secure,
+                                efficient, and easy to use.
+                            </p>
+                            <a href="{{url_for('post')}}" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1760548425425-e42e77fa38f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXZlbG9wbWVudHxlbnwxfHx8fDE3NzQxMTY4MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Blog post">
+                            <span class="blog-category">DevOps</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> February 28, 2026</span>
+                                <span><i class="far fa-clock"></i> 8 min read</span>
+                            </div>
+                            <h3 class="blog-title">Docker and Containerization</h3>
+                            <p class="blog-excerpt">
+                                Understanding containerization and how Docker can improve your development workflow
+                                and deployment process.
+                            </p>
+                            <a href="{{url_for('post')}}" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1771189255245-225dcea3f652?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGRlc2lnbiUyMHByb2plY3R8ZW58MXx8fHwxNzc0MTA0OTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Blog post">
+                            <span class="blog-category">JavaScript</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> February 22, 2026</span>
+                                <span><i class="far fa-clock"></i> 4 min read</span>
+                            </div>
+                            <h3 class="blog-title">Modern JavaScript Features</h3>
+                            <p class="blog-excerpt">
+                                Explore the latest JavaScript features and how they can make your code cleaner,
+                                more efficient, and easier to maintain.
+                            </p>
+                            <a href="{{url_for('post')}}" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1666723043169-22e29545675c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b3Jrc3BhY2UlMjBkZXNrfGVufDF8fHx8MTc3NDA4NzM0Mnww&ixlib=rb-4.1.0&q=80&w=1080" alt="Blog post">
+                            <span class="blog-category">Career</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> February 15, 2026</span>
+                                <span><i class="far fa-clock"></i> 6 min read</span>
+                            </div>
+                            <h3 class="blog-title">Tips for Junior Developers</h3>
+                            <p class="blog-excerpt">
+                                Essential advice and resources for developers starting their career in web development
+                                and software engineering.
+                            </p>
+                            <a href="{{url_for('post')}}" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}

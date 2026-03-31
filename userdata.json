@@ -1,0 +1,24 @@
+{
+  "params": {
+    "owner": "Parv Rathee",
+    "email":"iamparv.r@gmail.com",
+    "mail-user":"iamparv.r@gmail.com",
+    "mail-pass":"ckxf ianv kehy sepy",
+    "work": "Backend developer",
+    "tagline":" I create beautiful and functional web applications that solve real-world problems.\n Passionate about clean code and user-centered design.",
+    "about_1":"My native programming language is python, i have been coding for 2+ years",
+    "about_2":"parv's creativiy has no ends , i can solve any problem with my creative mind",
+    "about_3":"i am proficient in understanding Ai. Not like those who only use it",
+    "github":"https://github.com/imparv",
+    "google":"",
+    "discord":"",
+    "rights":"2026 Parv Rathee, all rights reserved.",
+    "quote":"I hope you liked the websit ~parv",
+    "about":{
+      "about_1":"I'm a passionate Python developer with 5+ years of experience building web applications. \nI love turning complex problems into simple, beautiful, and intuitive designs.",
+      "about_2":"My journey in web development started with a curiosity about how websites work, and it has \n evolved into a career where I get to build solutions that make a difference. I specialize in \n modern web technologies and enjoy working on both frontend and backend development.",
+      "about_3":"When I'm not coding, you'll find me exploring new technologies, contributing to open-source \n projects, or sharing my knowledge with the developer community through blog posts and tutorials."
+    }
+
+  }
+}
