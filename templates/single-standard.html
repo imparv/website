@@ -29,7 +29,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='image/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='image/favicon-16x16.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='image/favicon-32x32.png') }}">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest') }}">
 
 </head>
 
@@ -50,10 +50,11 @@
 
                     <div class="s-content__media">
                         <div class="s-content__post-thumb">
-                            <img src="images/thumbs/single/single-post-1050.jpg" 
-                                 srcset="images/thumbs/single/single-post-2100.jpg 2100w, 
-                                         images/thumbs/single/single-post-1050.jpg 1050w, 
-                                         images/thumbs/single/single-post-525.jpg 525w" sizes="(max-width: 2100px) 100vw, 2100px" alt="">
+
+                            <img src="{{ url_for('static', filename='image/thumbs/single/single-post-1050.jpg') }}" 
+                                 srcset="{{ url_for('static', filename='image/thumbs/single/single-post-2100.jpg') }} 2100w, 
+                                         {{ url_for('static', filename='image/thumbs/single/single-post-1050.jpg') }} 1050w, 
+                                         {{ url_for('static', filename='image/thumbs/single/single-post-525.jpg') }} 525w" sizes="(max-width: 2100px) 100vw, 2100px" alt="">
                         </div>
                     </div> <!-- end s-content__media -->
 
@@ -83,10 +84,13 @@
                             </p>
     
                             <p>
-                                <img src="images/sample-1050.jpg" 
-                                        srcset="images/sample-2100.jpg 2100w, 
-                                                images/sample-1050.jpg 1050w, 
-                                                images/sample-525.jpg 525w" sizes="(max-width: 2100px) 100vw, 2100px" alt="">
+                               
+                                
+                                
+                                <img src="{{ url_for('static', filename='image/sample-1050.jpg') }}" 
+                                        srcset=" {{ url_for('static', filename='image/sample-2100.jpg') }} 2100w, 
+                                                {{ url_for('static', filename='image/sample-1050.jpg ') }} 1050w, 
+                                                {{ url_for('static', filename='image/sample-525.jpg') }} 525w" sizes="(max-width: 2100px) 100vw, 2100px" alt="">
                             </p>
     
                             <p>
@@ -180,7 +184,7 @@
 
                             <div class="entry-author meta-blk">
                                 <div class="author-avatar">
-                                    <img class="avatar" src="images/avatars/user-06.jpg" alt="">
+                                    <img class="avatar" src="{{ url_for('static', filename='image/avatars/user-06.jpg') }}" alt="">
                                 </div>
                                 <div class="byline">
                                     <span class="bytext">Posted By</span>
@@ -251,7 +255,7 @@
                         <li class="depth-1 comment">
 
                             <div class="comment__avatar">
-                                <img class="avatar" src="images/avatars/user-01.jpg" alt="" width="50" height="50">
+                                <img class="avatar" src="{{ url_for('static', filename='image/avatars/user-01.jpg') }}" alt="" width="50" height="50">
                             </div>
 
                             <div class="comment__content">
@@ -279,7 +283,7 @@
                         <li class="thread-alt depth-1 comment">
 
                             <div class="comment__avatar">
-                                <img class="avatar" src="images/avatars/user-04.jpg" alt="" width="50" height="50">
+                                <img class="avatar" src="{{ url_for('static', filename='image/avatars/user-04.jpg') }}" alt="" width="50" height="50">
                             </div>
 
                             <div class="comment__content">
@@ -308,7 +312,7 @@
                                 <li class="depth-2 comment">
 
                                     <div class="comment__avatar">
-                                        <img class="avatar" src="images/avatars/user-03.jpg" alt="" width="50" height="50">
+                                        <img class="avatar" src="{{ url_for('static', filename='image/avatars/user-03.jpg') }}" alt="" width="50" height="50">
                                     </div>
 
                                     <div class="comment__content">
@@ -337,7 +341,7 @@
                                         <li class="depth-3 comment">
 
                                             <div class="comment__avatar">
-                                                <img class="avatar" src="images/avatars/user-04.jpg" alt="" width="50" height="50">
+                                                <img class="avatar" src="{{ url_for('static', filename='image/avatars/user-04.jpg') }}" alt="" width="50" height="50">
                                             </div>
 
                                             <div class="comment__content">
@@ -373,7 +377,7 @@
                         <li class="depth-1 comment">
 
                             <div class="comment__avatar">
-                                <img class="avatar" src="images/avatars/user-02.jpg" alt="" width="50" height="50">
+                                <img class="avatar" src="{{ url_for('static', filename='image/avatars/user-02.jpg') }}" alt="" width="50" height="50">
                             </div>
 
                             <div class="comment__content">
