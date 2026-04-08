@@ -109,7 +109,16 @@ ul {
     padding: var(--spacing-sm) var(--spacing-md);
 }
 
-.brand-text {
+.s-header--opaque .s-header__nav-wrap {
+    margin: 0 auto;
+}
+
+.s-header__nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-1);
+    font-weight: 600;
     font-size: 1.5rem;
     font-weight: 700;
     background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
@@ -137,13 +146,22 @@ ul {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--color-primary);
-    transition: width 0.3s ease;
+    margin-top: -1px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    bottom: auto;
+    left: auto;
 }
 
-.nav-link:hover::after,
-.nav-link.active::after {
+.s-header__toggle-menu span::before, 
+.s-header__toggle-menu span::after {
+    content: '';
     width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: inherit;
+    left: 0;
 }
 
 .nav-link:hover {
@@ -153,11 +171,11 @@ ul {
 .nav-toggle {
     display: none;
     background: none;
-    border: none;
+        border: none;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--color-text);
-}
+    }
 
 /* ===== Hero Section ===== */
 .hero {
