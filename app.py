@@ -1,6 +1,7 @@
 from flask import Flask, render_template,url_for,request,redirect, flash
 import json
 
+
 from flask_mail import Mail
 
 app = Flask(__name__)
